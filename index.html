@@ -245,36 +245,56 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="h2-heading">Projects</h2>
-                    <p class="p-heading">Listed below are some of the most representative projects I've worked on. They
-                        range from basic web design for presentation sites to advanced web development for online shops
+                    <p class="p-heading">Listed below are some of the most representative projects I've worked on.
                     </p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
                 <div class="row gap-4">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">NOTE TAKING MOBILE APPLICATION : FULL STACK ANROID APPLICATION
+                                USING KOTLIN AND SPRING BOOT(FOR BACKEND)
+                            </h5>
+                            <p>I designed and developed a feature-rich Android note-taking application with a user-friendly Jetpack Compose UI. I integrated APIs using Retrofit and implemented the backend using Spring Boot. To ensure a seamless user Android experience, I employed Jetpack Navigation for screen transitions. For data storage, I utilized a MySQL database to store Entity classes, enabling me to perform CRUD operations through Spring Boot APIs.</p>
+
+                            <a href="https://github.com/Ankit3002/Note-taking-app" class="btn-solid-lg">Frontend</a>
+                            <a href="https://github.com/Ankit3002/notemanagementservice" class="btn-solid-lg">Backend</a>
+
+                        </div>
+                    </div>
+
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">PAPPL-based Printer Applications: Option
                                 Setting presets via web Interface</h5>
 
-                            <p>Generally, Printer Applications as emulation of driverless IPP printers only support
-                                standard IPP job attributes as user-settable options: media size/type/source,
-                                duplex, printer-resolution, print-quality, print-content-optimize, … but some
-                                drivers, like for example Gutenprint or also PostScript printers, have many options
-                                to fine-tune the printout and those cannot get individually mapped to IPP options so
-                                that the user can control them in a print dialog. Also, many print dialogs,
-                                especially of phones, are limited to standard IPP attributes.</p>
-                            <p>Created a web interface from where one can create and edit any number of presets.
+                            <p>
+                                <b>API Design</b>: I created a set of APIs (Application Programming Interfaces) that allow for tasks related to preset management. These APIs cover functions such as creating presets, editing existing ones, storing them during runtime, and retrieving them when needed.
                             </p>
-                            <p>Defined the structure of presets and then wrote APIs to create and edit presets.
-                                Additionally, implemented APIs to store and fetch presets from the presets object
-                                during runtime.</p>
-                            <p>Subsequently, defined APIs to fetch presets from the state file and store presets in
-                                the state file.</p>
-                            <p>After creating all of that, implemented code to add presets to the thread running
-                                the printer, and worked on synchronizing the code to ensure smooth execution.
-                                Furthermore, added the code to include "job-presets-supported" in the
-                                client->response object, which can be called by CPDB enabled backends.</p>
+
+                            <p>
+                                <b>Integration with Printer Thread</b>
+                                : I made sure that these APIs work seamlessly with a component called the "printer thread." This integration ensures that preset management operations are coordinated and synchronized effectively, preventing any conflicts or errors.
+
+                            </p>
+
+                            <p>
+                                <b>
+                                    Synchronization
+                                </b>
+                                : To avoid any issues when multiple operations are happening at the same time, I ensured that the preset management APIs are synchronized. This means that they can handle multiple requests or tasks concurrently while maintaining data consistency.
+                            </p>
+
+                            <p>
+                                <b>Client Response Enhancement</b>
+                                : In the responses sent to the client, I included a new feature called "job-presets-supported." This feature is particularly useful for CPDB-enabled backends. It provides information to the client about the availability and support for job presets in the backend systems.
+                            </p>
+
+                            <p>
+                               <b>Skills</b>: IPP Protocol · Bash · Multithreading · Shell Scripting · Linux · C (Programming Language)
+                            </p>
 
                             <a href="https://github.com/Ankit3002/pappl" class="btn-solid-lg">Link</a>
                         </div>
@@ -283,14 +303,33 @@
                         <div class="card-body">
                             <h5 class="card-title">CPDB-BACKEND-CUPS : Support for fetching
                                 presets in CUPS Enabled Backend</h5>
-                            <p>Contributing in cpdb-backend-cups so that presets get available to cups enabled
-                                backend in the form of enumerated strings.</p>
-                            <p>Also writing the code so that when the user chooses a particular preset in the print
-                                dialog, only those attributes get applied to the print job object.</p>
+                          <p>
+                            <b>Contributed to CPDB-backend-CUPS</b>
+                            : I made contributions to the CPDB-backend-CUPS project. This project deals with managing print jobs for CUPS-enabled backends, which are common in printing systems.
+                          </p>
+                        
+                          <p>
+                            <b>Enabled Presets as Enumerated Strings</b>
+                            : One of my key contributions was enabling presets to be represented as enumerated strings. In simpler terms, I allowed users to select presets (predefined settings) using user-friendly names or labels rather than complex codes or numbers.
+                          </p>
 
+                          <p>
+                            <b>Implemented Attribute Application</b>
+                            : I wrote code that makes sure that when a user selects a preset, all the settings associated with that preset are automatically applied to the print job. This includes both standard settings defined by the Internet Printing Protocol (IPP) and any custom settings specific to the printer's manufacturer.
+                          </p>
+                          <p>
+                            <b>Enhanced User Experience</b>
+                            : This implementation significantly improves the user experience. Now, when someone chooses a preset, they don't need to manually configure all the print settings. The system takes care of it, making printing more convenient and error-free.
+                          </p>
+                          <p>
+                            <b>Skills</b>
+                            : IPP Protocol · Shell Scripting · Linux · CUPS · C (Programming Language)
+                          </p>
                             <a href="https://github.com/Ankit3002/cpdb-backend-cups" class="btn-solid-lg">Link</a>
                         </div>
                     </div>
+
+
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
