@@ -156,7 +156,7 @@ const workExperiences = {
     {
       role: "Open Source Contributor",
       company: "The Linux Foundation",
-      companylogo: require("./assets/images/foundation.png"),
+      companylogo: require("./assets/images/Untitled design.png"),
       date: "June 2018 – Present",
       desc: "Worked .",
       descBullets: [
@@ -169,7 +169,7 @@ const workExperiences = {
       company: "Ace Online",
       companylogo: require("./assets/images/ace.png"),
       date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Worked on transitioning Ace online Android App from Java to kotlin, helped in implementing Clean Architecture and dependency injection, Multi-module gradle , Proto and Preference DataStore Designed Ui in jetpack compose and worked on navigation between screens  wrote test cases using junit, mockito and espresso..."
     }
   ]
 };
@@ -179,7 +179,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
