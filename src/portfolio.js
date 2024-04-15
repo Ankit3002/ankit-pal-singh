@@ -212,6 +212,17 @@ const bigProjects = {
       ]
     },
     {
+      image: require("./assets/images/gait_recog.jpg"),
+      projectName: "Gait Recognition",
+      projectDesc: "In this project, I 'm developing a State fo the Art model to identify humans based on their walking style. I 'm using a U-Net architecture, which has an encoder-decoder structure with convolutinonal neural networks(CNNs). The model generates missing silhouettes of humans and then trains the encoder and decoder separately using triplet loss, gallery probe loss and regression loss.",
+      footerLink: [
+        {
+          name: "Github Link",
+          url: "https://github.com/Ankit3002/OpenGait/commits/master/"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/photo.png"),
       projectName: "FINED TUNED LLM (PEGASUS) FOR TEXT SUMMARIZATION",
       projectDesc: "Fine tuned Pegasus (LLM) for Text Summarization task on Academic paper Dataset.",
@@ -221,7 +232,20 @@ const bigProjects = {
           url: "https://github.com/Ankit3002/Text-Summarizer"
         }
       ]
+    },
+    {
+      image: require("./assets/images/cntroller.png"),
+      projectName: "RoboSapiens - Game Controller using Hand gesture Recognition",
+      projectDesc: "Created a hand gesture recognition Game controller using sequential Convolution Neural Network.The model is trained so that it classiﬁes 5 classes with 93 percent accuracy.",
+      footerLink: [
+        {
+          name: "Github Link",
+          url: "https://github.com/Ankit3002/RoboSapiens"
+        }
+      ]
     }
+    
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
