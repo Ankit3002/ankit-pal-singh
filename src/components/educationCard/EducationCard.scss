@@ -3,6 +3,18 @@
 .education-card {
   display: flex;
   flex-direction: row;
+  padding: 28px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 22px 52px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(16px);
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 70px rgba(37, 99, 235, 0.14);
 }
 
 .education-card:hover + .education-card-border {
@@ -45,8 +57,9 @@
   margin-right: 2rem;
   width: 6rem;
   height: 6rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.16);
   border-radius: 50%;
+  border: 5px solid white;
 }
 
 .education-card-right {

@@ -3,13 +3,14 @@
 .card-image {
   max-width: 100%;
   height: auto;
-  width: 250px;
+  width: 210px;
+  border-radius: 22px;
 }
 .card-title {
   color: $titleColor;
-  font-size: 22px;
-  line-height: 24px;
-  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 800;
   margin: 15px 0 0 0;
 }
 .card-subtitle {
@@ -21,13 +22,14 @@
   display: flex;
   flex-direction: column;
   background-color: $lightBackground2;
-  padding: 1.5rem;
-  border-radius: 10px;
+  padding: 1.35rem;
+  border-radius: 28px;
   border: 1px solid $lightBorder1;
   justify-content: center;
+  overflow: hidden;
 }
 .project-card-light {
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  box-shadow: 0 22px 52px rgba(15, 23, 42, 0.09);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -44,14 +46,16 @@
   text-align: center;
 }
 .project-card-light:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: 0 30px 70px rgba(37, 99, 235, 0.16);
+  transform: translateY(-8px);
 }
 .project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
+  transform: translateY(-8px);
 }
 .project-image {
   position: relative;
-  height: 250px;
+  height: 220px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -60,19 +64,19 @@
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 1.35rem;
 }
 
 .project-card-footer span.project-tag {
-  background: $buttonColor;
+  background: linear-gradient(135deg, $buttonColor, $buttonHover);
   color: $lightBackground3;
   vertical-align: middle;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 999px;
   display: inline-flex;
   font-size: 0.75rem;
-  height: 2em;
+  height: 2.35em;
   justify-content: center;
   white-space: nowrap;
   line-height: 1.5;
@@ -80,6 +84,11 @@
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
+}
+
+.project-card-footer span.project-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.18);
 }
 
 @media (max-width: 768px) {

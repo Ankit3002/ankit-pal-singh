@@ -2,6 +2,7 @@
 
 .social-media-div {
   font-size: 2em;
+  margin-top: 12px;
 }
 
 .icon-button {
@@ -25,7 +26,8 @@
   user-select: none;
   width: 2.6rem;
   margin-bottom: 10px;
-  transition: 0.2s ease-in;
+  transition: 0.25s ease-in;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
 }
 
 .facebook i {
@@ -79,7 +81,8 @@
 .stack-overflow i:hover,
 .kaggle i:hover,
 .medium i:hover {
-  background-color: $textColor;
+  background: linear-gradient(135deg, $buttonColor, $buttonHover);
+  transform: translateY(-4px) scale(1.06);
 }
 
 /* Media Query */
