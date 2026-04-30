@@ -20,6 +20,8 @@ export default function Greeting() {
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
+            <div className="hero-orb hero-orb-one"></div>
+            <div className="hero-orb hero-orb-two"></div>
             <div>
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}

@@ -19,8 +19,8 @@
   font-display: swap;
 }
 :root {
-  --portfolio-bg: #f8fafc;
-  --portfolio-text: #0f172a;
+  --portfolio-bg: #ffffff;
+  --portfolio-text: #181818;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -33,7 +33,7 @@ body {
 }
 body {
   margin: 0;
-  font: 18px / 1.65 Poppins, Montserrat, "Montserrat", sans-serif;
+  font: 18px / 1.65 "Poppins", Poppins, Montserrat, "Montserrat", sans-serif;
   color: var(--portfolio-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,9 +44,7 @@ body:before {
   inset: 0;
   pointer-events: none;
   z-index: -1;
-  background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.18), transparent 28%),
-    radial-gradient(circle at 85% 15%, rgba(20, 184, 166, 0.16), transparent 26%),
-    linear-gradient(180deg, #f8fafc 0%, #eef6ff 45%, #ffffff 100%);
+  background: #ffffff;
 }
 * {
   box-sizing: border-box;
